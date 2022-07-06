@@ -1,9 +1,7 @@
-package me.surreallobster.restfulShapes;
+package me.surreallobster.restfulShapes.domain;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import me.surreallobster.restfulShapes.domain.BaseShape;
 
 public class ShapeRequest {
 	

@@ -1,4 +1,4 @@
-package me.surreallobster.restfulShapes;
+package me.surreallobster.restfulShapes.domain;
 
 public class PerimeterResponse {
 	

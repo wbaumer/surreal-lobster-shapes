@@ -1,4 +1,4 @@
-package me.surreallobster.restfulShapes;
+package me.surreallobster.restfulShapes.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,6 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-
-import me.surreallobster.restfulShapes.domain.Circle;
-import me.surreallobster.restfulShapes.domain.Square;
 
 public class ShapeResponse {
 

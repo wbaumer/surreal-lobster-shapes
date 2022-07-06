@@ -20,13 +20,13 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.ResponseEntity;
 
-import me.surreallobster.restfulShapes.AreaResponse;
-import me.surreallobster.restfulShapes.PerimeterResponse;
-import me.surreallobster.restfulShapes.ShapeRequest;
-import me.surreallobster.restfulShapes.ShapeResponse;
 import me.surreallobster.restfulShapes.controllers.ShapeController;
+import me.surreallobster.restfulShapes.domain.AreaResponse;
 import me.surreallobster.restfulShapes.domain.BaseShape;
 import me.surreallobster.restfulShapes.domain.Circle;
+import me.surreallobster.restfulShapes.domain.PerimeterResponse;
+import me.surreallobster.restfulShapes.domain.ShapeRequest;
+import me.surreallobster.restfulShapes.domain.ShapeResponse;
 import me.surreallobster.restfulShapes.domain.Square;
 import me.surreallobster.restfulShapes.repository.ShapeRepository;
 
