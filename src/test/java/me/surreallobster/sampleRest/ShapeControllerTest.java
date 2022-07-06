@@ -92,10 +92,13 @@ public class ShapeControllerTest {
 	
 	@Test
 	public void updateEntity() {
+		ShapeRequest shapeRequest = new ShapeRequest();
+		shapeRequest.setType("circle");
+		shapeRequest.getValues().add(3);
 		Optional<BaseShape> optCircle = Optional.of(baseCircle);
 		when(shapeRepository.save(any(BaseShape.class))).thenReturn(baseCircle);
 		when(shapeRepository.findById(any(Long.class))).thenReturn(optCircle);
-		BaseShape updateShape = shapeController.updateShapeById(baseCircle, id);
+		BaseShape updateShape = shapeController.updateShapeById(shapeRequest, id);
 		verify(shapeRepository, times(1)).save(any(BaseShape.class));
 		assertEquals(baseCircle, updateShape);
 	}

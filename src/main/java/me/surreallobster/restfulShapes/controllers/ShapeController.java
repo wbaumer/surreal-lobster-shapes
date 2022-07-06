@@ -108,7 +108,10 @@ public class ShapeController {
 	}
 
 	@PutMapping("/shapes/{id}")
-	public BaseShape updateShapeById(@RequestBody BaseShape newShape, @PathVariable Long id) {
+	public BaseShape updateShapeById(@RequestBody ShapeRequest request, @PathVariable Long id) {
+		BaseShape newShape = new BaseShape();
+		newShape.setType(request.getType());
+		newShape.setValue(request.getValues().get(0));
 		return updateShape(newShape, id);
 
 	}
